@@ -1,0 +1,116 @@
+
+For example, to search for everything except abc, search for:
+!abc
+
+To show the basic search syntax in Everything:
+In "Everything", from the Help menu, click Search syntax.
+
+How do I use wildcards?
+
+Using a * in your search will match any number of any type of character.
+For example, here is how to search for files and folders that start with e and end with g: e*g
+Using a ? in your search will match one character.
+For example, here is how to search for files that have a 2 letter file extension: *.??
+
+How do I include spaces in my search?
+
+To include spaces in your search enclose your search in double quotes.
+For example, here is how to search for foo<space>bar: "foo bar"
+
+How do I search for a file type?
+
+To search for a file type, type the file extension into the search edit,
+eg: to search for the mp3 file type, type *.mp3 into the search edit.
+To search for more than one type of file type use a | to separate file types,
+eg: *.bmp|*.jpg will search for files with the extension bmp or jpg.
+
+How do I search for files and folders in a specific location?
+
+To search for files and folders in a specific location include a \ in your search string.
+For example, here is how to search for all your mp3s in a downloads folder: downloads\ .mp3
+You could alternately enable Match Path in the Search menu and include the location in your search string.
+For example, here is how to search for all your avis in a downloads folder with Match Path enabled: downloads .avi
+
+Advanced searching
+
+See Searching Everything for more information.
+
+
+
+Troubleshooting
+
+Search doesn't find what I want
+
+Please make sure the following search options are unchecked:
+In Everything, from the Search menu:
+Uncheck Match Case.
+Uncheck Match Whole Word.
+Uncheck Match Path.
+Uncheck Match Diacritics.
+Uncheck Enable Regex.
+
+Please make sure the Everything filter is selected:
+In Everything, from the Search menu:
+Check Everything.
+
+Settings are not saved
+
+Please make sure Store settings and data in %APPDATA%\Everything is enabled.
+
+To enable Store settings and data in %APPDATA%\Everything:
+In Everything, from the Tools menu, click Options.
+Click the General tab.
+Check Store settings and data in %APPDATA%\Everything.
+Click OK.
+
+Duplicated results
+
+NTFS volumes are automatically indexed by "Everything".
+Adding a NTFS volume as a folder index will show duplicated results.
+
+Please remove any NTFS volumes from the folder index:
+In Everything, from the Tools menu, click Options.
+Click the Folders tab.
+Select any NTFS volumes and click Remove.
+Click OK.
+
+To check which NTFS volumes are automatically included:
+In Everything, from the Tools menu, click Options.
+Click the NTFS tab.
+NTFS volumes that have Include in database checked are included in the NTFS index.
+
+The result list is empty or contains only drives
+
+Please make sure the "Everything" service is running or "Everything" is running as administrator.
+
+To install the "Everything" service:
+In Everything, from the Tools menu, click Options.
+Click the General tab.
+Check Everything Service:
+Click OK.
+
+-or-
+
+To run Everything as administrator:
+In Everything, from the Tools menu, click Options.
+Click the General tab.
+Check Run as administrator:
+Click OK.
+
+Make sure you have at least one local NTFS volume.
+Please see How do I convert a volume to NTFS.
+
+To manually enable all local NTFS volumes for indexing:
+In Everything, from the Tools menu, click Options.
+Click the NTFS tab.
+For each volume in the Local NTFS volumes list:
+Check Include in database.
+Check Enable USN Journal logging.
+Check Monitor changes.
+Click OK.
+
+Force Everything to rebuild its database:
+In Everything, from the Tools menu, click Options.
+Click the Indexes tab.
+Click Force Rebuild.
+Click OK.
